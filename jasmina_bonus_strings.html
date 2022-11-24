@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bonus opdracht: strings</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+let tekst = prompt("Wat is de tekst?", 'Hallo wereld, dit is JavaScript!');
+let zoek = prompt("Wat is de te zoeken tekst?", 'JavaScript');
+let positie = tekst.indexOf("JavaScript");
+document.write(`<p>In de tekst '${tekst}' begint de te zoeken tekst '${zoek}' op positie ${positie}</p>`);
+
+let tekst2 = "Hij woont in de postcode 1000, te Brussel";
+let postcode = "1000";
+let woonplaats = "Brussel";
+let positiepc = tekst2.indexOf("1000");
+let positiewp = tekst2.indexOf("Brussel");
+document.write(`<p>In de tekst '${tekst2}' begint '${postcode}' op positie ${positiepc} en '${woonplaats}' op positie ${positiewp}</p>`);
+
+tekst2 = "Hij woont in de postcode xxxx, te xxxx";
+document.write(`<p>De gecensueerde zin is dan: '${tekst2}'</p>`);
+
+let tekst3 = "JavaScript is de belangrijkste scriptingtaal voor het web. De taal bestaal al sinds 1995 en werd uitgevonden door Brendan Eich voor gebruik in de webbrowser Netscape 2'.";
+let positie3 = tekst3.indexOf("de", tekst3.indexOf("de") + 1);
+document.write(`<p>In de tekst ${tekst3} staat de tweede 'de' volgens Javascript op positie ${positie3}</p>`);
+
+</script>
+
+</body>
+</html>

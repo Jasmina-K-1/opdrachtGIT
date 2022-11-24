@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Opdracht strings</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+let voornaam = prompt("Wat is je voornaam?");
+let naam = prompt("Wat is je naam?");
+let samen = voornaam + ' ' + naam;
+document.write(`<p>Hallo ${samen}. </p>`);
+
+let karakters = voornaam + naam;
+let lengte = karakters.length;
+document.write(`<p>Jouw naam bevat ${lengte} karakters.</p>`);
+
+let filename = "javaScriptFrameWork";
+document.write(`<p>De originele filename is: '${filename}'.</p>`);
+
+let kleineletters = filename.toLowerCase();
+filename = filename.toLowerCase();
+document.write(`<p>De filename kan beter in kleine letters getypt worden, dus: '${filename}.'</p>`);
+
+let file = kleineletters.substring(0,10);
+let name = kleineletters.substring(10,19);
+document.write(`<p>Als je '${kleineletters}' opsplitst, krijg je: '${file}' en '${name}'.</p>`);
+
+let vijf = kleineletters.charAt(5);
+document.write(`<p>Het zesde karakter (volgens mensen) in '${kleineletters}' is: '${vijf}'.</p>`);
+
+let email = "jan.klaassen@mail.com";
+let positie = email.indexOf("@");
+document.write(`<p>In '${email}' staat de @ op positie: ${positie}.</p>`);
+
+let result = email.slice(0, email.indexOf('@'));
+document.write(`<p>De naam is dus: '${result}'`);
+
+let opdracht = "Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr()."
+let acht = opdracht.substr(0, 8);
+document.write(`<p>De originele tekst: 'Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr()' en wordt dan: '${acht}'</p>`);
+
+
+</script>
+</body>
+</html>
